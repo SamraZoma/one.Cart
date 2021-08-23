@@ -75,7 +75,7 @@ body{
 /*------------------------------------ two -----------------------------*/
 .containerTwo{
     
-padding-top 20%;
+padding-top :20%;
 text-align:center;
 }
 
