@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 
 *{
@@ -7,22 +7,139 @@
 }
 
 body{
-    font-family: 'Rampart One', cursive;
-    /* display : flex; */
-    /* flex-direction : column; */
-    /* align-items : center; */
-    /* justify-content: center; */
-    /* height : 100vh; */
-    /* overflow : hidden ; */
+    font-family: 'Raleway', sans-serif;
+
+    background-color: #333;
+    color: #222;
+    overflow-x : hidden ;
     margin : 0 ;
 
 }
 
-.container{
-    /* display : flex; */
-    /* width : 90vw; */
+.containerbody{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition : transform 0.5s linear;
+    width : 100vw;
+    min-height:100vh;
+    padding : 50px;
 
 }
+ .containerbody.show-nav{
+     transform : rotate(-20deg);
+
+ }
+
+ .circle-container{
+     position :fixed;
+     top : -100px;
+     left : -100px;
+
+ }
+ .circlenav{
+     background-color: #ff7979;
+     height:200px;
+     width:200px;
+     border-radius: 50%;
+     position : relative;
+     transition :transform 0.5s linear;
+     
+
+ }
+ .containerbody.show-nav .circlenav {
+     transform : rotate(-70deg);
+     position :fixed;
+     top : -100px;
+     left : -100px;
+     background-color: #ff7979;
+     height:200px;
+     width:200px;
+     border-radius: 50%;
+ }
+
+
+  .circlenav button{
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      height :100px;
+      background :transparent;
+      border : 0;
+      font-size: 26px;
+      color:#fff;
+  }
+
+  .circlenav button:focus {
+      outline : none;
+
+  }
+
+  .circlenav button#close{
+      top :60%;
+      transform: rotate(90deg);
+      transform-origin: top left;
+  }
+  .circlenav button#open{
+    left :60%;
+ 
+}
+
+.content img {
+    max-width : 100%;
+}
+ .content{
+     max-width : 1000px;
+     margin : 50px auto;
+ }
+
+ .content h1{
+     margin: 0;
+ }
+
+ nav {
+     position: fixed;
+     bottom : 40px;
+     left :0;
+ }
+
+ nav ul{
+list-style-type: none;
+padding-left: 30px;     
+}
+
+
+.containerbody.show-nav + nav li{
+    transform: translateX(0);
+    transform-origin : top left ;
+}
+nav ul li {
+    text-transform: uppercase;
+    color :#fff;
+    margin : 40px 0;
+    transform: translateX(-100%);
+    transition : transform 0.4s ease-in;
+}
+
+nav ul li i {
+    font-size : 20px;
+    margin-right : 10px;
+    
+}
+
+nav ul li + li{
+    margin-left: 15px;
+    transform: translateX(-150%);
+
+}
+
+nav ul li + li +li{
+    margin-left:30px;
+    transform: translateX(-200%);
+    
+}
+
+/************************* contact ************************/
 
 .panel {
     background-size :auto 100%;
@@ -39,6 +156,8 @@ body{
 }
 
 .panel h3 {
+    font-family: 'Rampart One', cursive;
+
     font-size : 24px;
     position : absolute;
     bottom : 20%;
@@ -54,7 +173,7 @@ body{
 
 }
 
-.panel.active h3 {
+.panel.activee h3 {
     opacity :1;
 }
 
@@ -101,7 +220,7 @@ body{
     transform:translateY(-50%);
     height :4px;
     width : 0%;
-    z-index: -1;
+    z-index: 1;
     transition : 0.4s ease;
 }
 .circle{
@@ -114,7 +233,9 @@ body{
     align-items: center;
     align-content : center;
     border : 3px solid #e0e0e0 ;
-    transition : 0.4s ease ;
+    transition : 0.4s ease ;    
+    z-index: 2;
+
 }
 .circle.active{
     border-color : #3498db;
