@@ -3,54 +3,83 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
         <title> Cards</title>
     </head>
     <body>
-         <div class="container">
-             <div class="row">
-                <div class="panel activee" style="background-image:url('1.jpeg');">
-                    <h3> some thing </h3>
-                   </div>
-                   <div class="panel " style="background-image:url('2.jpeg');">
-                    <h3> some thing </h3>
-                   </div>
-                   <div class="panel " style="background-image:url('3.jpeg');">
-                    <h3> some thing </h3>
-                   </div>
-                   <div class="panel " style="background-image:url('4.jpeg');">
-                    <h3> some thing </h3>
-                   </div>
-                   <div class="panel " style="background-image:url('5.jfif');">
-                    <h3> some thing </h3>
-                   </div>
-                   <div class="panel " style="background-image:url('6.jfif');">
-                    <h3> some thing </h3>
-                   </div>
-                   
-             </div>
-         </div>
-           <hr>
-         <br>
-         <div class="container "  style="text-align:center">
-              <div class="row justify-content-center">
-                <div class="progress-container ">
-                    <div class="progresss" id="progress"></div>
-                    <div class="circle ">1</div>
-                    <div class="circle">2</div>
-                    <div class="circle">3</div>
-                    <div class="circle">4</div>
+
+        <div class="containerbody">
+            <div class="circle-container">
+                <div class="circlenav">
+                    <button id="close"><i class="fas fa-times"></i></button>
+                    <button id="open"><i class="fas fa-bars"></i></button>
+
                 </div>
-              </div>
-              <div class="row justify-content-center">
-                <button class="btnn" id="prev">Prev</button>
-                <button class="btnn" id="next"> Nest</button>
-            </div>     
-          </div>
+            </div>
+
+            <div class="content">
+                <h1>heading</h1>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laboriosam repellendus, officia vitae
+                     vel corrupti culpa, perferendis enim, et non qui quos dolore minus? Distinctio dolor libero qu
+                     aerat iure id!</p>
+
+
+
+                <!-- <div class="container"> -->
+                    <div class="row">
+                       <div class="panel activee" style="background-image:url('1.jpeg');">
+                           <h3> some thing </h3>
+                          </div>
+                          <div class="panel " style="background-image:url('2.jpeg');">
+                           <h3> some thing </h3>
+                          </div>
+                          <div class="panel " style="background-image:url('3.jpeg');">
+                           <h3> some thing </h3>
+                          </div>
+                          <div class="panel " style="background-image:url('4.jpeg');">
+                           <h3> some thing </h3>
+                          </div>
+                          <div class="panel " style="background-image:url('5.jfif');">
+                           <h3> some thing </h3>
+                          </div>
+                          <div class="panel " style="background-image:url('6.jfif');">
+                           <h3> some thing </h3>
+                          </div>
+                          
+                    </div>
+                <!-- </div> -->
+                  <hr>
+                <br>
+                <div   style="text-align:center">
+                     <div class="row justify-content-center">
+                       <div class="progress-container ">
+                           <div class="progresss" id="progress"></div>
+                           <div class="circle">1</div>
+                           <div class="circle">2</div>
+                           <div class="circle">3</div>
+                           <div class="circle">4</div>
+                       </div>
+                     </div>
+                     <div class="row justify-content-center">
+                       <button class="btnn" id="prev">Prev</button>
+                       <button class="btnn" id="next"> Nest</button>
+                   </div>     
+                 </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li> <i class="fas fa-home"></i>Home</li>
+                <li><i class="fas fa-user-alt"></i>About</li>
+                <li><i class="fas fa-envelope"></i>Contact</li>
+            </ul>
+        </nav>
         <script src="script.js"></script>
     </body>
 </html>  
