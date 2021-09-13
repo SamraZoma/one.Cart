@@ -24,6 +24,8 @@ body{
     min-height:100vh;
     padding : 50px;
 
+
+
 }
  .containerbody.show-nav{
      transform : rotate(-20deg);
@@ -145,7 +147,7 @@ nav ul li + li +li{
     background-size :auto 100%;
     background-position : center ;
     background-repeat: no-repeat ;
-    height : 80vh;
+    height :40vh;
     border-radius : 50px;
     color : #fff;
     cursor : pointer;
